@@ -2,30 +2,29 @@ import random
 
 
 # Names dictionary
-names = {"forest":["Willow", "Bramble", "Finch", "Elm", "Birch", "Oak", "Rowan", "Yew", "Pine", "Holly", "Dawn", "Dusk", "Robin", "Thrush"],
- "coast":["Tern"]}
-
-
-
+names = {"forest":["Willow", "Bramble", "Elm", "Birch", "Oak", "Rowan", "Yew", "Pine", "Holly", "Thrush", "Briar", "Hazel"],
+ "coast":["Tern", "Gull"],
+ "mountain": ["Stone", "Rock"],
+ "default": []}
 
 
 
 # Variables
-word1 = ["Mist", "Storm", "Strix", "Thrush", "Ural", "Swallow", "Swift", "Eagle", "Swan", "Harrier", "Heron", "Scops", "Kite", "Gale", "Tawny", "Hawk", "Gust", "Finch"]
+default = ["Mist", "Storm", "Strix", "Thrush", "Ural", "Swallow", "Swift", "Eagle", "Swan", "Harrier", "Heron", "Scops", "Kite", "Gale", "Tawny", "Hawk", "Gust", "Finch", "Dawn", "Dusk", "Cinder", "Crow", "Raven", "Quail", "Robin", "Linnet", "Lark"]
 word2 = ["dusk","talon", "beak","feather", "flight", "fall", "spots", "eye", "eagle", "song", "storm", "dawn", "stream", "pool", "river", "wind", "wing", "sky"]
-#forest = ["Willow", "Bramble", "Finch", "Elm", "Birch", "Oak", "Rowan", "Yew", "Pine", "Holly", "Dawn", "Dusk", "Robin", "Thrush"]
-#coast = ["Tern"]
 environment = ""
 name_length = ""
 
 # Subprograms to generate name depending on length
 
 def short_name(pName_environment):
-    return random.choice(names[pName_environment.lower()])
+    options = names[pName_environment.lower()] + default
+    return random.choice(options)
 
 
 def long_name(pName_environment):
-    return random.choice(names[pName_environment.lower()]) + random.choice(word2)
+    options = names[pName_environment.lower()] + default
+    return random.choice(options) + random.choice(word2)
 
 
 
