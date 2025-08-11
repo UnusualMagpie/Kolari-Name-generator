@@ -3,9 +3,8 @@ import random
 
 # Names dictionary
 names = {"forest":["Willow", "Bramble", "Elm", "Birch", "Oak", "Rowan", "Yew", "Pine", "Holly", "Thrush", "Briar", "Hazel"],
- "coast":["Tern", "Gull"],
- "mountain": ["Stone", "Rock"],
- "default": []}
+ "coast":["Tern", "Gull", "Tide"],
+ "mountain": ["Stone", "Rock"]}
 
 
 
@@ -18,16 +17,16 @@ name_length = ""
 # Subprograms to generate name depending on length
 
 def short_name(pName_environment):
-    options = names[pName_environment.lower()] + default
+    options = names[pName_environment.lower()] + default # Adding default and environment lists together
     return random.choice(options)
 
 
 def long_name(pName_environment):
-    options = names[pName_environment.lower()] + default
+    options = names[pName_environment.lower()] + default # Adding default and environment lists together
     return random.choice(options) + random.choice(word2)
 
 
-
+# Main program
 
 name_length = int(input("How many words (1 or 2)? "))
 environment = input("Any specific environment? ")
