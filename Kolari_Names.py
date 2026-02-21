@@ -17,7 +17,7 @@ environment = ""
 name_length = ""
 quantity = ""
 
-affinities = ["Rain", "Mist", "Smoke", "Sand", "Mud", "Fireflies", "Wind", "Freshwater", "Clouds", "Rock", "Plants", "Growth", "Ice", "Wood", "Growth", "Butterfly", "Metal", "Sunlight", "Amber", "Heat", "Embers", "Fire", "Dust", "Crystal", "Lightning", "Snow", "Frost", "Aurora", "Ripples", "Gold", "Ash", "Underwater light", "Stars", "Tar", "Waterfall", "Sea foam", "Night sky", "Fungi", "Pollen", "Sunset clouds", "Scree", "Moonlight", "Thunder", "Dawn", "Bone", "Constellations", "Tides", "Waves", "Clay"]
+affinities = ["Rain", "Mist", "Smoke", "Sand", "Mud", "Fireflies", "Wind", "Freshwater", "Clouds", "Rock", "Plants", "Ice", "Wood", "Growth", "Butterfly", "Metal", "Sunlight", "Amber", "Heat", "Embers", "Fire", "Dust", "Crystal", "Lightning", "Snow", "Frost", "Aurora", "Ripples", "Gold", "Ash", "Underwater light", "Stars", "Tar", "Waterfall", "Sea foam", "Night sky", "Fungi", "Pollen", "Sunset clouds", "Scree", "Moonlight", "Thunder", "Dawn", "Bone", "Constellations", "Tides", "Waves", "Clay"]
 
 # Subprograms to generate name depending on length
 
